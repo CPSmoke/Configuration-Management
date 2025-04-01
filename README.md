@@ -5,51 +5,73 @@ https://roadmap.sh/projects/configuration-management
 Update the package list:
 Open a terminal and run the command to update the list of available packages:
 
-```sudo apt update```
+```
+sudo apt update
+```
 Install the necessary dependencies:
 Make sure that you have the necessary dependencies installed:
 
-```sudo apt install software-properties-common```
+```
+sudo apt install software-properties-common
+```
 Add a PPA for Ansible:
 Ansible can be installed from a PPA (Personal Package Archive). Add the PPA using the following command:
 
-```sudo add-apt-repository ppa:ansible/ansible```
+```
+sudo add-apt-repository ppa:ansible/ansible
+```
 Update the package list again:
 After adding a new PPA, you need to update the package list:
 
-```sudo apt update```
+```
+sudo apt update
+```
 Install Ansible:
 You can now install Ansible by running the command:
 
-```sudo apt install ansible```
+```
+sudo apt install ansible
+```
 Check the Ansible version:
 After installation, check that Ansible is installed correctly and review its version:
 
-```ansible --version```
+```
+ansible --version
+```
 
 Configuring SSH On the local computer:
 Generating a key:
 
-```ssh-keygen -t rsa -b 4096```
+```
+ssh-keygen -t rsa -b 4096
+```
 
 Add public keys from the local server to the remote one:
 For Linux:
 
-```ssh-copy-id -i ~/.ssh/id_rsa.pub user@server-ip```
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@server-ip
+```
 
 For Windows:
 
-  ```type C:\Users\username\.ssh\id_rsa_test\id_rsa1.pub | ssh user@19.XXX.XXX.XXX "mkdir -p ~/.ssh && cat >> ~/.ssh/id_rsa1"```
+  ```
+  type C:\Users\username\.ssh\id_rsa_test\id_rsa1.pub | ssh user@19.XXX.XXX.XXX "mkdir -p ~/.ssh && cat >> ~/.ssh/id_rsa1"
+```
 4.Connecting to the Server
 
 Now you can connect to your server:
 
 For Linux:
 
-```ssh -i ~/.ssh/id_rsa user@server-ip```
+```
+ssh -i ~/.ssh/id_rsa user@server-ip
+```
 For Windows
 
-```ssh -i C:\Users\username\.ssh\id_rsa_test\id_rsa1 user@server-ip```
+```
+ssh -i C:\Users\username\.ssh\id_rsa_test\id_rsa1 user@server-ip
+```
 
 File setup.yml
 
