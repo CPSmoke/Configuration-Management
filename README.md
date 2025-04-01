@@ -1,6 +1,7 @@
 # Configuration-Management
 https://roadmap.sh/projects/configuration-management
-Installing Ansible on Ubuntu:
+
+#Installing Ansible on Ubuntu:
 Update the package list:
 Open a terminal and run the command to update the list of available packages:
 
